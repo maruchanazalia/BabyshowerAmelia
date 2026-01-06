@@ -1,0 +1,261 @@
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream);
+  padding: 60px 20px;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-main-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+  width: 100%;
+}
+
+.hero-column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-column-center {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-column-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-info-when {
+  margin-bottom: 0;
+}
+
+.hero-info-where {
+  margin-top: 0;
+}
+
+.hero-photo-frame {
+  width: 100%;
+  position: relative;
+}
+
+.hero-photo {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+  background: var(--white);
+  border-radius: 50% 50% 0 0;
+  overflow: hidden;
+  padding-bottom: 85%;
+  box-shadow: 0 10px 40px rgba(161, 76, 158, 0.2);
+}
+
+.info-icon {
+  color: var(--chinese-blue);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.info-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-photo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text-content {
+  text-align: center;
+  color: var(--text-dark);
+  width: 100%;
+  order: 3;
+  margin-top: 0;
+}
+
+.hero-names {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-names h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--chinese-blue);
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-names .and {
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.hero-invitation {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 40px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.info-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--chinese-blue);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.info-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.info-date,
+.info-location {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+@media (max-width: 968px) {
+  .hero-main-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-column-left,
+  .hero-column-right {
+    order: 2;
+  }
+
+  .hero-column-center {
+    order: 1;
+    gap: 25px;
+  }
+
+  .hero-info-item {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .info-content {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 15px;
+  }
+
+  .hero-main-layout {
+    gap: 30px;
+  }
+
+  .hero-column-left {
+    gap: 25px;
+  }
+
+  .hero-photo {
+    padding-bottom: 75%;
+  }
+
+  .hero-names h2 {
+    font-size: 2rem;
+  }
+
+  .hero-names .and {
+    font-size: 1.5rem;
+  }
+
+  .hero-invitation {
+    font-size: 1.1rem;
+  }
+
+  .hero-info-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-names h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-invitation {
+    font-size: 1rem;
+  }
+
+  .info-value {
+    font-size: 1.1rem;
+  }
+}

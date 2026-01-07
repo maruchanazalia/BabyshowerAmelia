@@ -30,7 +30,7 @@ const LocationSection = () => {
             </div>
             <div className="location-map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.1234567890123!2d-93.12345678901234!3d16.75412345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ1JzE0LjgiTiA5M8KwMDcnMjQuNCJX!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1910.0089884643417!2d-93.1285187!3d16.7757812!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ecd900608af331%3A0x6b9c62c5e2827abe!2sQuinta%20Palmera!5e0!3m2!1ses-419!2smx!4v1767805827047!5m2!1ses-419!2smx"
                 width="100%"
                 height="400"
                 style={{ border: 0, borderRadius: '15px', maxWidth: '100%' }}
@@ -39,10 +39,11 @@ const LocationSection = () => {
                 referrerPolicy="no-referrer-when-downgrade"
                 title="Ubicación del Baby Shower"
               ></iframe>
+
               <div className="map-link-container">
-                <a 
-                  href="https://maps.app.goo.gl/7dma7N4jQLuraacw9" 
-                  target="_blank" 
+                <a
+                  href="https://maps.app.goo.gl/7dma7N4jQLuraacw9"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="map-link"
                 >
@@ -50,6 +51,7 @@ const LocationSection = () => {
                 </a>
               </div>
             </div>
+
           </div>
           <div className={`location-image-container ${loaded ? 'fade-in' : ''}`} style={{ animationDelay: '0.4s' }}>
             <div className="location-image">

@@ -2,12 +2,19 @@
   background: linear-gradient(135deg, var(--cream) 0%, #FFF8F0 100%);
   padding: 100px 20px;
   position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .about-container {
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .about-title {
@@ -36,6 +43,9 @@
   margin-bottom: 50px;
   flex-wrap: wrap;
   opacity: 1;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .about-card {

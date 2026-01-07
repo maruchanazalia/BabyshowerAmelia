@@ -42,6 +42,7 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
                 <div className="info-label">Cuándo:</div>
                 <div className="info-value">Viernes</div>
                 <div className="info-date">7 Feb. 2026</div>
+                <div className="info-time">5:00 PM</div>
               </div>
             </div>
           </div>
@@ -102,6 +103,7 @@ const HeroSection = ({ scrollY }: HeroSectionProps) => {
                 <div className="info-label">Cuándo:</div>
                 <div className="info-value">Viernes</div>
                 <div className="info-date">7 Feb. 2026</div>
+                <div className="info-time">5:00 PM</div>
               </div>
             </div>
             <div className="hero-info-item hero-info-where">

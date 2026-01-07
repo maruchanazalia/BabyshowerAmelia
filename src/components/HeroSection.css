@@ -256,6 +256,14 @@
   line-height: 1.4;
 }
 
+.info-time {
+  font-size: 1rem;
+  color: var(--chinese-blue);
+  font-weight: 600;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
 .hero-info-container-mobile {
   display: none;
 }
@@ -444,6 +452,10 @@
   .info-location {
     font-size: 0.9rem;
   }
+
+  .info-time {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -588,5 +600,9 @@
   .info-date,
   .info-location {
     font-size: 0.85rem;
+  }
+
+  .info-time {
+    font-size: 0.9rem;
   }
 }

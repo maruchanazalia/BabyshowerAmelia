@@ -33,7 +33,7 @@ const LocationSection = () => {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.1234567890123!2d-93.12345678901234!3d16.75412345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQ1JzE0LjgiTiA5M8KwMDcnMjQuNCJX!5e0!3m2!1ses!2smx!4v1234567890123!5m2!1ses!2smx"
                 width="100%"
                 height="400"
-                style={{ border: 0, borderRadius: '15px' }}
+                style={{ border: 0, borderRadius: '15px', maxWidth: '100%' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

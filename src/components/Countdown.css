@@ -92,8 +92,13 @@
 }
 
 @media (max-width: 768px) {
+  .countdown-section {
+    padding: 80px 20px;
+  }
+
   .countdown-title {
     font-size: 2rem;
+    margin-bottom: 40px;
   }
 
   .countdown-grid {
@@ -116,8 +121,13 @@
 }
 
 @media (max-width: 480px) {
+  .countdown-section {
+    padding: 60px 15px;
+  }
+
   .countdown-title {
     font-size: 1.5rem;
+    margin-bottom: 30px;
   }
 
   .countdown-grid {
@@ -131,6 +141,7 @@
 
   .countdown-number {
     font-size: 1.8rem;
+    margin-bottom: 8px;
   }
 
   .countdown-label {

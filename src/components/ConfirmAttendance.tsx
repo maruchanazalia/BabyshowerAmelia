@@ -10,8 +10,8 @@ const ConfirmAttendance = () => {
   }, [])
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '9613594344'
-    const message = encodeURIComponent('¡Hola! Confirmo mi asistencia al Baby Shower')
+    const phoneNumber = '9613762202'
+    const message = encodeURIComponent('Confirmo mi asistencia al Baby Shower. Mi nombre completo es:')
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`
     window.open(whatsappUrl, '_blank')
   }

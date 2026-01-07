@@ -46,6 +46,49 @@
   transform: scale(1.05);
 }
 
+.navbar-overlay {
+  display: none;
+}
+
+.navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 25px;
+  height: 20px;
+  position: relative;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--chinese-blue);
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -91,16 +134,82 @@
     font-size: 1.2rem;
   }
 
+  .navbar-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
   .navbar-menu {
-    gap: 15px;
-    font-size: 0.9rem;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(255, 239, 209, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 0;
+    padding: 80px 30px 30px;
+    box-shadow: -5px 0 20px rgba(161, 76, 158, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navbar-menu.open {
+    right: 0;
+  }
+
+  .navbar-menu.open ~ .navbar-overlay {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .navbar-menu li {
+    padding: 15px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(161, 76, 158, 0.1);
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-menu li::after {
+    display: none;
+  }
+
+  .navbar-menu li:hover,
+  .navbar-menu li:active {
+    color: var(--chinese-blue);
+    padding-left: 10px;
   }
 }
 
 @media (max-width: 480px) {
   .navbar-menu {
-    gap: 10px;
-    font-size: 0.8rem;
+    width: 100%;
+    right: -100%;
+  }
+
+  .navbar-menu.open {
+    right: 0;
   }
 }
 

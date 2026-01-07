@@ -56,3 +56,9 @@ section {
     padding: 60px 15px;
   }
 }
+
+@media (max-width: 480px) {
+  section {
+    padding: 50px 10px;
+  }
+}

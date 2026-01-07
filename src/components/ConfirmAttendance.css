@@ -94,27 +94,45 @@
 }
 
 @media (max-width: 768px) {
+  .confirm-section {
+    padding: 80px 20px;
+  }
+
   .confirm-title {
     font-size: 2.2rem;
+    margin-bottom: 15px;
   }
 
   .confirm-subtitle {
     font-size: 1.1rem;
+    margin-bottom: 35px;
   }
 
   .confirm-button {
     padding: 18px 40px;
     font-size: 1.1rem;
   }
+
+  .whatsapp-icon svg {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 @media (max-width: 480px) {
+  .confirm-section {
+    padding: 60px 15px;
+  }
+
   .confirm-title {
     font-size: 1.8rem;
+    margin-bottom: 12px;
   }
 
   .confirm-subtitle {
     font-size: 1rem;
+    margin-bottom: 30px;
+    padding: 0 10px;
   }
 
   .confirm-button {
@@ -122,6 +140,13 @@
     font-size: 1rem;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .whatsapp-icon svg {
+    width: 16px;
+    height: 16px;
   }
 }
 

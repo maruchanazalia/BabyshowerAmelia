@@ -7,6 +7,7 @@ import ConfirmAttendance from './components/ConfirmAttendance'
 import Gallery from './components/Gallery'
 import LocationSection from './components/LocationSection'
 import AboutSection from './components/AboutSection'
+import GiftRegistrySection from './components/GiftRegistrySection'
 
 function App() {
   const [scrollY, setScrollY] = useState(0)
@@ -27,6 +28,7 @@ function App() {
       <Countdown />
       <LocationSection />
       <AboutSection />
+      <GiftRegistrySection />
       <ConfirmAttendance />
       <Gallery />
     </div>

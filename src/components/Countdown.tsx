@@ -13,7 +13,7 @@ const Countdown = () => {
   useEffect(() => {
     setLoaded(true)
     
-    const targetDate = new Date('2026-02-07T00:00:00').getTime()
+    const targetDate = new Date('2026-02-01T17:00:00-06:00').getTime() // 1 de febrero 2026 a las 5:00 PM hora de México
 
     const updateCountdown = () => {
       const now = new Date().getTime()

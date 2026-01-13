@@ -25,7 +25,7 @@ const LocationSection = () => {
               <p>29014 Tuxtla Gutiérrez, Chis.</p>
               <p className="location-date">
                 <CalendarIcon />
-                <span>7 de febrero del 2026</span>
+                <span>1 de febrero del 2026</span>
               </p>
             </div>
             <div className="location-map-container">
